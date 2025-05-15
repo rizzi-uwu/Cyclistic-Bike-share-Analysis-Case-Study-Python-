@@ -1,49 +1,60 @@
-# 🚴 London Bicycle Data Analysis
+# 🚴 Cyclists’ Historical Data Analysis
 
 ## 📌 Project Overview
 
-This project dives into London’s Santander Cycle Hire data using **BigQuery** and **Python**. The analysis explores patterns in trip duration, station usage, and cycling trends using millions of records dating back to 2011.
+This project provides a comprehensive analysis of cyclists' historical trip data from the **London Santander Cycle Hire Scheme** using public datasets. The goal is to uncover behavioral patterns, station popularity, seasonal variations, and other insights that help understand how London's citizens use bicycle-sharing services over time.
 
-The goal is to extract actionable insights related to urban mobility and user behavior by querying the public dataset and visualizing results through Python.
-
----
-
-## 🧰 Tools & Technologies Used
-
-- **Google BigQuery**: For querying large-scale cycling data  
-- **Python**: For data analysis and automation  
-- **Pandas & NumPy**: Data manipulation and aggregation  
-- **Matplotlib & Seaborn**: Data visualization  
-- **Plotly & Cufflinks**: Interactive plotting  
-- **Jupyter Notebook**: Exploratory analysis  
+The dataset used is available via **Google BigQuery** and spans multiple years, offering millions of rows of real-time and historical trip data.
 
 ---
 
-## 📊 Key Insights
+## 📊 Dataset Summary
 
-- **Trip Duration Trends**: Analyzed average and maximum trip durations by year.
-- **Station Usage**: Identified most popular start and end stations.
-- **Date-Specific Analysis**: Focused on cycling patterns on unique dates (e.g., Summer Solstice).
-- **Temporal Behavior**: Observed trends over time including daily and hourly ridership.
+The dataset includes:
 
----
+- 📍 Start and End Station Names and IDs  
+- ⏰ Start and End Timestamps  
+- 🚴 Trip Duration (in seconds)  
+- 🆔 Bike IDs  
+- 📌 Station Metadata (location, identifiers)
 
-## 📂 Dataset Information
-
-The dataset is sourced from [Google BigQuery Public Data](https://console.cloud.google.com/marketplace/product/bigquery-public-data/london_bicycles).
-
-It includes:
-
-- Start/End Timestamps  
-- Station Names & IDs  
-- Trip Duration  
-- Bike ID  
+Source: [London Bicycle Hires – Google BigQuery Public Dataset](https://console.cloud.google.com/marketplace/product/bigquery-public-data/london_bicycles)
 
 ---
 
-## ⚙️ How to Run the Project
+## 🎯 Objectives
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/rizzi-uwu/London-Bicycle-Data-Analysis.git
-   cd London-Bicycle-Data-Analysis
+- Analyze trip durations over the years
+- Identify top-performing and low-traffic stations
+- Observe trends during specific dates or events
+- Examine differences in ride behavior based on station or season
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Google BigQuery**: To efficiently query massive datasets  
+- **Python**: Analysis and scripting  
+- **Pandas & NumPy**: Data wrangling  
+- **Matplotlib, Seaborn, Plotly**: Visualizations (static and interactive)  
+- **Jupyter Notebook**: Execution and documentation  
+
+---
+
+## 🔍 Key Questions Answered
+
+- What were the longest and shortest trips recorded by year?
+- Which stations were most frequently used?
+- How do ride counts vary by season or day of the week?
+- Which stations had the highest average ride durations?
+- What insights emerge from specific historical dates (e.g. holidays, events)?
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/rizzi-uwu/Cyclists-Historical-Data-Analysis.git
+cd Cyclists-Historical-Data-Analysis
